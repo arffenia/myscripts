@@ -1,0 +1,66 @@
+<!-- 
+Author: Renata Ościak (Arffenia)
+Title: Display Changer
+Description: Change the display of individual sections by clicking on the options in the menu
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Changer</title>
+
+</head>
+<body>
+
+<nav>
+	<ul>
+        <li onclick="showMefirst()"><a href="#first-section">First</a></li>
+        <li onclick="showMesecond()"><a href="#second-section">Second</a></li>
+        <li onclick="showMethird()"><a href="#third-section">Third</a></li>
+    </ul>
+</nav>
+
+
+<section id="ONE-ID">				
+	<a name="first_section"></a>
+	<p>First Section text</p>
+</section>
+
+
+<section id="TWO-ID">				
+	<a name="second-section"></a>
+	<p>Second Section text</p>
+</section>
+
+<section id="THREE-ID">				
+	<a name="third-section"></a>
+	<p>Trird Section text</p>
+</section>
+
+
+<script>
+	
+function showMefirst() {
+    document.getElementById("ONE-ID").style.display = "block";
+	document.getElementById("TWO-ID").style.display = "none";
+    document.getElementById("THREE-ID").style.display = "none";
+}
+
+function showMesecond() {
+    document.getElementById("ONE-ID").style.display = "none";
+	document.getElementById("TWO-ID").style.display = "block";
+    document.getElementById("THREE-ID").style.display = "none";
+}
+
+function showMethird() {
+    document.getElementById("ONE-ID").style.display = "none";
+	document.getElementById("TWO-ID").style.display = "none";
+    document.getElementById("THREE-ID").style.display = "block";
+}
+
+
+
+</script>
+
+</body>
+</html>
